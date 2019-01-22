@@ -39,7 +39,6 @@
 				<div class="carousel" id="carousel" data-flickity='{"pageDots": false }'>
 	 			</div>
   			<div class="progress-bar"></div>
-  
 			<script id="template-carousel-item" type="x-tmpl-mustache">
 
 				<div class="carousel-cell" id="carousel-cell{{slideNumber}}"style="background-image:url({{image}});background-size: cover;">
@@ -57,39 +56,74 @@
 					slideNumber: '1',
 					image: 'images/1.jpg', 
 					title: 'Lorem ipsum,',
-					description: 'dolor sit amet, consectetur adipiscing elit.'
+					description: 'dolor sit amet, consectetur adipiscing elit.',
+					coords: {lat: '52.272', lng: '16.818725'},
+					mapDesc: '1'
 					},
 					{
 					slideNumber: '2',
 					image: 'images/2.jpg', 
 					title: 'Lorem ipsum,',
-					description: 'dolor sit amet, consectetur adipiscing elit.'
+					description: 'dolor sit amet, consectetur adipiscing elit.',
+					coords: {lat: '52.408', lng: '16.905217'},
+					mapDesc: '2'
 					},
 					{
 					slideNumber: '3',
 					image: 'images/3.jpg', 
 					title: 'Lorem ipsum,',
-					description: 'dolor sit amet, consectetur adipiscing elit.'
+					description: 'dolor sit amet, consectetur adipiscing elit.',
+					coords: {lat: '52.22414', lng: '20.990604'},
+					mapDesc: '3'
 					},
 					{
 					slideNumber: '4',
 					image: 'images/4.jpg', 
 					title: 'Lorem ipsum,',
-					description: 'dolor sit amet, consectetur adipiscing elit.'
+					description: 'dolor sit amet, consectetur adipiscing elit.',
+					coords: {lat: '54.254240', lng: '18.481198'},
+					mapDesc: '4'
 					},
 					{
 					slideNumber: '5',
 					image: 'images/5.jpg', 
 					title: 'Lorem ipsum,',
-					description: 'dolor sit amet, consectetur adipiscing elit.'
+					description: 'dolor sit amet, consectetur adipiscing elit.',
+					coords: {lat: '65.895834', lng: '94.891618'},
+					mapDesc: '5'
 					}	
 				];
 			</script>
 		</section>
+		<section>	
+    		<div id="map"></div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<script src="vendor/flickity.pkgd.min.js"></script>
 		<script src="vendor/hash.js"></script>
 		<script src="vendor/mustache.js"></script>
 		<script src="js/script.js"></script>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqrAfCI17RvYA4l7mhlT7y6GbIDS7w2lQ&callback=initMap">
+    </script>
 	</body>
 
 </html>

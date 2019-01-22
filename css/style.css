@@ -62,3 +62,21 @@ body {
   border: none;
   padding: 15px;
   color: #fff; }
+
+section {
+  background-color: #171717; }
+
+#map {
+  width: 40%;
+  height: 40vh;
+  min-height: 250px;
+  margin: auto;
+  border-radius: 10px; }
+  @media (min-width: 767px) and (max-width: 991px) {
+    #map {
+      width: 80%;
+      height: 70vh; } }
+  @media (max-width: 767px) {
+    #map {
+      width: 95%;
+      height: 70vh; } }

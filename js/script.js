@@ -1,9 +1,7 @@
-
+'use strict';
+(function(){
 var templateItem = document.getElementById('template-carousel-item').innerHTML;	
-
 	Mustache.parse(templateItem);
-	
-
 	var results = document.getElementById('carousel');
 	for(var i = 0; i < cellData.length; i++){
 
@@ -24,3 +22,33 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+ window.initMap = function() {
+  var mapSlide1 = {lat: 52.408086, lng: 16.905217};
+ 
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 12, center: mapSlide1});
+  var marker = new google.maps.Marker({position: mapSlide1, map: map});
+
+ 
+
+for(var i = 0; i < cellData.length; i++){
+			var marker = new google.maps.Marker({
+			position: {lat:Number(cellData[i].coords.lat), lng: Number(cellData[i].coords.lng)}, 
+			map: map
+		});
+
+		
+	};
+}
+
+		
+		
+		
+		
+		
+
+
+
+
+})();

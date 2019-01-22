@@ -1,4 +1,16 @@
 
+var templateItem = document.getElementById('template-carousel-item').innerHTML;	
+
+	Mustache.parse(templateItem);
+	
+
+	var results = document.getElementById('carousel');
+	for(var i = 0; i < cellData.length; i++){
+
+		results.insertAdjacentHTML('beforeend', Mustache.render(templateItem, cellData[i]));
+	};
+	
+	
 var flkty = new Flickity('.carousel');
 
 var previousButton = document.querySelector('.restart');

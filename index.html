@@ -15,7 +15,7 @@
 
 			
 		</header>
-		<section class="car">
+		<!--<section class="car">
 			
 			<button class="button restart">go to first slide</button>
 			<div class="carousel"
@@ -29,11 +29,66 @@
 	</div>
   <div class="progress-bar"></div>
   
+</section>
+-->
 
 
+		
+		<section>
+			<button class="button restart">go to first slide</button>
+				<div class="carousel" id="carousel" data-flickity='{"pageDots": false }'>
+	 			</div>
+  			<div class="progress-bar"></div>
+  
+			<script id="template-carousel-item" type="x-tmpl-mustache">
+
+				<div class="carousel-cell" id="carousel-cell{{slideNumber}}"style="background-image:url({{image}});background-size: cover;">
+					<div class="container">	
+						<h1>{{title}}</h1>
+						<p>{{{description}}}</p>
+					</div>
+				</div>
+			</script>
+
+
+			<script>
+				var cellData = [
+					{
+					slideNumber: '1',
+					image: 'images/1.jpg', 
+					title: 'Lorem ipsum,',
+					description: 'dolor sit amet, consectetur adipiscing elit.'
+					},
+					{
+					slideNumber: '2',
+					image: 'images/2.jpg', 
+					title: 'Lorem ipsum,',
+					description: 'dolor sit amet, consectetur adipiscing elit.'
+					},
+					{
+					slideNumber: '3',
+					image: 'images/3.jpg', 
+					title: 'Lorem ipsum,',
+					description: 'dolor sit amet, consectetur adipiscing elit.'
+					},
+					{
+					slideNumber: '4',
+					image: 'images/4.jpg', 
+					title: 'Lorem ipsum,',
+					description: 'dolor sit amet, consectetur adipiscing elit.'
+					},
+					{
+					slideNumber: '5',
+					image: 'images/5.jpg', 
+					title: 'Lorem ipsum,',
+					description: 'dolor sit amet, consectetur adipiscing elit.'
+					}	
+				];
+			</script>
 		</section>
 		<script src="vendor/flickity.pkgd.min.js"></script>
 		<script src="vendor/hash.js"></script>
+		<script src="vendor/mustache.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 

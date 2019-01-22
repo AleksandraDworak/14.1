@@ -46,10 +46,6 @@ body {
 .container {
   width: 100%;
   margin: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   color: #fff;
   font-family: Quicksand;
   background-color: rgba(0, 0, 0, 0.4);

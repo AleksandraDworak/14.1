@@ -1,82 +1,31 @@
 /* external css: flickity.css */
 /* Breakpoints */
-* {
-  box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-body {
-  font-family: sans-serif; }
+body { font-family: sans-serif; }
 
-.car {
-  width: 100%;
-  margin: auto; }
+.car { width: 100%; margin: auto; }
 
-.carousel {
-  background: rgba(0, 0, 0, 0.7);
-  max-height: 50%;
-  min-height: 250px;
-  background-size: cover; }
+.carousel { background: rgba(0, 0, 0, 0.7); max-height: 50%; min-height: 250px; background-size: cover; }
 
-.carousel-cell {
-  width: 40%;
-  height: 50vh;
-  min-height: 250px;
-  margin-right: 70px;
-  border-radius: 10px;
-  counter-increment: carousel-cell; }
-  @media (min-width: 767px) and (max-width: 991px) {
-    .carousel-cell {
-      width: 80%;
-      height: 70vh;
-      margin-right: 5px; } }
-  @media (max-width: 767px) {
-    .carousel-cell {
-      width: 95%;
-      height: 70vh;
-      margin-right: 5px; } }
+.carousel-cell { width: 40%; height: 50vh; min-height: 250px; margin-right: 70px; border-radius: 10px; counter-increment: carousel-cell; }
 
-.flickity-page-dots {
-  display: none; }
+@media (min-width: 767px) and (max-width: 991px) { .carousel-cell { width: 80%; height: 70vh; margin-right: 5px; } }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #828383;
-  border-radius: 0 0 10px 10px; }
+@media (max-width: 767px) { .carousel-cell { width: 95%; height: 70vh; margin-right: 5px; } }
 
-.container {
-  width: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: Quicksand;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 15px; }
+.flickity-page-dots { display: none; }
 
-.restart {
-  position: absolute;
-  top: 50px;
-  left: 15px;
-  z-index: 5;
-  background-color: #828383;
-  font-family: Quicksand;
-  border-radius: 3px;
-  border: none;
-  padding: 15px;
-  color: #fff; }
+.progress-bar { height: 20px; width: 0; background: #828383; border-radius: 0 0 10px 10px; }
 
-section {
-  background-color: #171717; }
+.container { width: 100%; margin: auto; color: #fff; font-family: Quicksand; background-color: rgba(0, 0, 0, 0.4); padding: 15px; }
 
-#map {
-  width: 40%;
-  height: 40vh;
-  min-height: 250px;
-  margin: auto;
-  border-radius: 10px; }
-  @media (min-width: 767px) and (max-width: 991px) {
-    #map {
-      width: 80%;
-      height: 70vh; } }
-  @media (max-width: 767px) {
-    #map {
-      width: 95%;
-      height: 70vh; } }
+.restart { position: absolute; top: 50px; left: 15px; z-index: 5; background-color: #828383; font-family: Quicksand; border-radius: 3px; border: none; padding: 15px; color: #fff; }
+
+section { background-color: #171717; }
+
+#map { width: 40%; height: 40vh; min-height: 250px; margin: auto; border-radius: 10px; }
+
+@media (min-width: 767px) and (max-width: 991px) { #map { width: 80%; height: 70vh; } }
+
+@media (max-width: 767px) { #map { width: 95%; height: 70vh; } }
